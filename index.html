@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="/logo1.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Blockchain Info</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <img src="/logo1.png" alt="logo" class="logo" width="60px">
+        <a class="navbar-brand p-2" href="/index.html">Blockchain info</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/About.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Market.html">Market</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/Topics.html" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Topics
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/About Blockchain.html">About Blockchain</a>
+                        <a class="dropdown-item" href="/About Bitcoin.html">About Bitcoin</a>
+                        <a class="dropdown-item" href="/About Ethereum.html">About Ethereum</a>
+                        <a class="dropdown-item" href="/About Altcoin.html">About Altcoin</a>
+                        <a class="dropdown-item" href="/About Investment.html">About Investment</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Contact Us.html">Contact Us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+                <button class="btn btn-danger" data-toggle="modal" data-target="#LoginModal">Login</button>
+                <button class="btn btn-danger" data-toggle="modal" data-target="#SignupModal">SignUp</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login to AAB</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  Signup Modal -->
+    <div class="modal fade" id="SignupModal" tabindex="-1" role="dialog" aria-labelledby="SignupModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Signup to AAB</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="cexampleInputPassword1">Confirm Password</label>
+                            <input type="password" class="form-control" id="cexampleInputPassword1"
+                                placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <h2>Welcome to Blockchain</h2> -->
+                    <h2>Blockchain</h2>
+                    <a href="/About Blockchain.html" class="btn btn-primary">Blockchain</a>
+                    <a href="/About Bitcoin.html" class="btn btn-primary">Bitcoin</a>
+                    <a href="/About Ethereum.html" class="btn btn-primary">Ethereum</a>
+                    <a href="/About Altcoin.html" class="btn btn-primary">Altcoin</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <h2>Welcome to cryptocurrency</h2> -->
+                    <h2>Bitcoin</h2>
+                    <a href="/About Blockchain.html" class="btn btn-primary">Blockchain</a>
+                    <a href="/About Bitcoin.html" class="btn btn-primary">Bitcoin</a>
+                    <a href="/About Ethereum.html" class="btn btn-primary">Ethereum</a>
+                    <a href="/About Altcoin.html" class="btn btn-primary">Altcoin</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <h2>Welcome to cryptocurrency</h2> -->
+                    <h2>Ethereum</h2>
+                    <a href="/About Blockchain.html" class="btn btn-primary">Blockchain</a>
+                    <a href="/About Bitcoin.html" class="btn btn-primary">Bitcoin</a>
+                    <a href="/About Ethereum.html" class="btn btn-primary">Ethereum</a>
+                    <a href="/About Altcoin.html" class="btn btn-primary">Altcoin</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/4.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <h3>Welcome to Crypto Exchange</h3> -->
+                    <h2>Binance Exchanges</h2>
+                    <a href="/About Blockchain.html" class="btn btn-primary">Blockchain</a>
+                    <a href="/About Bitcoin.html" class="btn btn-primary">Bitcoin</a>
+                    <a href="/About Ethereum.html" class="btn btn-primary">Ethereum</a>
+                    <a href="/About Altcoin.html" class="btn btn-primary">Altcoin</a>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+    <div class="container my-4 ">
+        <div class="row featurette d-flex justify-content-center align-items-center bg-info my-4">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Blockchain <span class="text-muted"></span></h2>
+                <p class="lead">Blockchain technology is decentralized, immutable, distributed
+                    ledger. It is a form of storing information that prevents anyone from changing, hacking, or
+                    cheating it.</p>
+                <a href="https://builtin.com/blockchain" target="_blank" class="btn btn-primary">More about
+                    Blockchain</a>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid" src="https://source.unsplash.com/600x400/?blockchain,blockchain technology"
+                    alt="">
+            </div>
+        </div>
+        <div class="row featurette d-flex justify-content-center align-items-center bg-info my-4">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Bitcoin<span class="text-muted"></span></h2>
+                <p class="lead">Bitcoin uses peer-to-peer technology to operate with no central authority or
+                    banks, managing transactions and the issuing of bitcoins is carried out collectively by the
+                    network.</p>
+                <a href="https://bitcoin.org/en/" target="_blank" class="btn btn-primary">More about bitcoin</a>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="img-fluid" src="https://source.unsplash.com/600x400/?Ethereum,Bitcoin" alt="">
+            </div>
+        </div>
+        <div class="row featurette d-flex justify-content-center align-items-center bg-info my-4">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Ethereum<span class="text-muted"></span></h2>
+                <p class="lead">Ethereum is a technology that's home to digital money, global payments, and
+                    applications. The community has built a booming digital economy, bold new ways for creators to
+                    earn online.</p>
+                <a href="https://ethereum.org/en/" target="_blank" class="btn btn-primary">More about Ethereum</a>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid" src="https://source.unsplash.com/600x400/?binance Trading ,cryptocurrency"
+                    alt="">
+            </div>
+        </div>
+        <div class="row featurette d-flex justify-content-center align-items-center bg-info my-4">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Binance <span class="text-muted"></span></h2>
+                <p class="lead">Binance is a cryptocurrency exchange which is the largest exchange in the world
+                    in terms of daily trading volume of cryptocurrencies. It was founded in 2017, Binance was founded
+                    by Changpeng Zhao.</p>
+                <a href="https://binance.com/en/" target="_blank" class="btn btn-primary">More about Binance</a>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid" src="https://source.unsplash.com/600x400/?binance,binance exchange" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="container bg-warning">
+        <p class="float-right "><a href="/">Back to top</a></p>
+        <p>© 2022-2023 Blockchain info & Crypto , Inc. · <a href="/">Privacy</a> · <a href="/">Terms</a></p>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
